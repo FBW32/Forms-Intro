@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Forms Intro</h1>
+    <label for="cool">How cool are you?</label>
+    <input type="range" name="cool" id="" />
+
+    <h2>Reddit Search</h2>
+    <form action="https://www.reddit.com/search/">
+      <div>
+        <label for="search">Please Enter a Search Term</label>
+        <input
+          type="text"
+          name="q"
+          id="search"
+          placeholder="enter search term"
+        />
+      </div>
+
+      <div>
+        <label for="sort">Sort By:</label>
+        <select name="sort" id="sort">
+          <option value="top">Top</option>
+          <option value="new">New</option>
+          <option value="relevance">Relevance</option>
+        </select>
+      </div>
+
+      <input type="submit" value="Submit" />
+    </form>
+    <h2>Contact form</h2>
+    <form action="mailto:helon@dci.org" method="post">
+      <label for="username">enter a username</label>
+      <input type="text" name="username" id="username" />
+      <br />
+      <label for="email">Please enter your Email</label>
+      <input type="email" name="email" id="email" required />
+      <br />
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      <input type="submit" value="submit" />
+    </form>
+
+    <h2>Validation Form</h2>
+    <form action="">
+      <label for="username">Please Enter Your Username</label>
+      <input type="text" name="username" id="username" required maxlength="4" />
+      <br />
+      <label for="email">Please enter your Email</label>
+      <input type="email" name="email" id="email" required />
+      <br />
+      <input type="submit" value="Submit" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>fieldset</h2>
+    <fieldset>
+      <legend>Choose your favorite activity</legend>
+      <input type="radio" name="activity" id="eating" />
+      <label for="eating">Eating</label>
+      <input type="radio" name="activity" id="sleeping" />
+      <label for="sleeping">Sleeping</label>
+      <input type="radio" name="activity" id="jogging" />
+      <label for="jogging">jogging</label>
+    </fieldset>
+    <hr />
+
+    <h2>Text Area</h2>
+    <textarea name="" id="" cols="50" rows="10"></textarea>
+
+    <hr />
+
+    <h2>Checkboxes</h2>
+    <input type="checkbox" name="dogs" id="dogs" checked />
+    <label for="dogs">Do you like dogs?</label>
+
+    <h2>Radio Buttons</h2>
+    <p>Sex</p>
+    <input type="radio" name="sex" id="male" />
+    <label for="male">male</label>
+    <input type="radio" name="sex" id="female" />
+    <label for="female">female</label>
+    <input type="radio" name="sex" id="other" />
+    <label for="other">other</label>
+
+    <hr />
+    <form action="">
+      <h2>Text Input</h2>
+      <input type="text" name="username" id="username" placeholder="username" />
+      <input type="text" name="city" id="city" value="Berlin" />
+      <h2>Email Input</h2>
+      <input type="email" name="email" id="email" placeholder="enter email" />
+      <h3>Color Input</h3>
+      <input type="color" name="color" id="color" value="#874623" />
+      <h2>Number Input</h2>
+      <input
+        type="number"
+        name="number"
+        id="number"
+        min="1"
+        max="10"
+        step="2"
+      />
+      <h2>Password Input</h2>
+      <input type="password" name="pw" id="pw" />
+      <h2>File Input</h2>
+      <label for="file">Upload a file</label>
+      <input type="file" name="file" id="file" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

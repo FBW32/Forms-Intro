@@ -1,0 +1,29 @@
+form {
+  width: 200px;
+}
+
+textarea {
+  resize: vertical;
+  max-height: 50px;
+}
+
+label {
+  /* font-size: 1.5rem; */
+}
+
+input,
+textarea {
+  outline: none;
+  border: 1px solid #ddd;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+  border: 1px solid rgb(0, 0, 255);
+}
+
+::placeholder {
+  color: rgb(245, 94, 24);
+  opacity: 1;
+}
